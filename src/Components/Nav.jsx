@@ -3,6 +3,8 @@ import logo from "../assets/logo.svg";
 import Sidebar from "./Sidebar";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 
 const navMenus = [
@@ -40,12 +42,12 @@ const Nav = () => {
             <li key={menu.id} className="relative">
               <Link
                 onClick={() => setActiveMenu(menu.id)}
-                to={`${menu.url}`}
+                to={menu.url}
                 className="cursor-pointer"
               >
                 {menu.label}
               </Link>
-              {menu.id == activeMenu && (
+              {menu.id === activeMenu && (
                 <div className="absolute w-[70%] h-[2px] bg-primary transform left-1/2 -translate-x-1/2"></div>
               )}
             </li>
@@ -54,12 +56,16 @@ const Nav = () => {
         <Button name={"Get Started"} classname="lg:flex hidden" />
         <button
           onClick={() => setIsSidebar((prev) => !prev)}
-          className="lg:hidden block"
+          className="lg:hidden block text-2xl"
         >
-          Hamburger
+          <RxHamburgerMenu />
+
         </button>
       </nav>
-      {isSidebar && <Sidebar setSidebar={setIsSidebar} />}
+      {isSidebar && (<Sidebar setSidebar={setIsSidebar}
+      navMenus={navMenus}
+      activeMenu={activeMenu}
+      setActiveMenu={setActiveMenu} />)}
     </>
   );
 };

@@ -9,6 +9,7 @@ import Trending from '../Components/Trending'
 import Testimonials from '../Components/Testimonials'
 import Views from '../Components/Views'
 
+
 const Index = () => {
   return (
     <>
@@ -21,7 +22,9 @@ const Index = () => {
     <Views/>
     <Banner/>
     <Trending/>
-    <Testimonials/>
+   <Testimonials/> 
+  
+    
     </>
   )
 }

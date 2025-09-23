@@ -14,7 +14,7 @@ import Section from "./Section";
 const Trending = () => {
   return (
     <Section classname="flex flex-col gap-10">
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-2 md:pt-10 pt-30">
         <span className="text-center font-semibold font-poppins text-[18px] text-primary uppercase">
           Trendy
         </span>

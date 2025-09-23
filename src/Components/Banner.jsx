@@ -4,7 +4,7 @@ import line1 from "../assets/banners/line1.png";
 import Button from "./Button";
 const Banner = () => {
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 md:gap-0 gap-4 h-[400px]">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 md:gap-0 gap-4 h-[400px] mt-10">
       <div className="columns-1 relative flex items-center justify-center">
         <img
           src={col1Image}

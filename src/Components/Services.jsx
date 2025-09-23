@@ -8,13 +8,14 @@ import Section from "./Section";
 const Services = () => {
   return (
     <Section classname="flex flex-col items-center gap-[20px] overflow-hidden w-full">
-      <span className="font-semibold font-poppins text-[18px] text-primary uppercase">
+      <span className="font-semibold font-poppins md:text-[18px] text-[16px] text-primary uppercase mt-8">
         Category
       </span>
-      <h2 className="text-[#181E4B] font-volkhov font-bold text-[50px] capitalize leading-[50px]">
+      <h2 className="text-[#181E4B] font-volkhov font-bold md:text-[50px] sm:text-[30px] text-[20px] text-center capitalize md:leading-[50px] leading-[20px]">
         We Offer Best Services
       </h2>
-      <div className="lg:flex grid grid-cols-2 place-items-center items-center justify-between mt-5 w-full gap-5">
+      {/* Services Cards Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-6  mt-4 ">
         <ServicesCard
           img={image1}
           title={"Guided Tours"}

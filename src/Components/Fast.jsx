@@ -14,14 +14,14 @@ import Section from "./Section";
 
 const Fast = () => {
   return (
-    <Section classname="grid 2xl:grid-cols-2 grid-cols-1 w-full 2xl:gap-0 gap-20">
+    <Section classname="grid  md:grid-cols-2 grid-cols-1 w-full md:gap-0 gap-10">
       <div className="col-span-1 flex flex-col gap-5">
         <div className="flex flex-col gap-3">
           <span className="font-semibold font-poppins text-[18px] text-primary uppercase">
-            Category
+            Fast & Easy
           </span>
-          <h2 className="text-[#181E4B] font-volkhov font-bold text-[50px] capitalize leading-[50px]">
-            We Offer Best Services
+          <h2 className="text-[#181E4B] font-volkhov font-bold md:text-[40px] text-[20px] capitalize md:leading-[50px] leading-[30px]">
+            Get Your Favourite Resort Bookings
           </h2>
         </div>
         <div className="flex flex-col gap-5">
@@ -141,16 +141,16 @@ const Fast = () => {
           <img
             src={plane}
             alt=""
-            className="-right-[500px] -top-[150px] absolute -z-20 max-w-none w-[700px]"
+            className="hidden md:block -right-[500px] -top-[150px] absolute -z-20 max-w-none w-[700px]"
           />
-          <div className="flex flex-col gap-3 px-5 py-4 absolute bottom-9 -right-36 bg-white w-[300px] rounded-[18px] shadow-xl">
+          <div className=" hidden md:flex flex-col gap-3 px-5 py-4 absolute bottom-9 -right-36 bg-white w-[300px] rounded-[18px] shadow-xl">
             <div className="flex items-center w-full justify-start gap-3">
               <img
                 src={img4}
                 alt=""
                 className="rounded-full w-[70px] h-[70px] object-cover"
               />
-              <div className="flex flex-col gap-1">
+              <div className=" flex flex-col gap-1">
                 <p className="text-[#84829A] font-poppins text-[14px]">
                   Ongoing
                 </p>

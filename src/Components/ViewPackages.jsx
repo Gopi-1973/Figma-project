@@ -8,13 +8,13 @@ import Section from "./Section";
 
 const ViewPackages = () => {
   return (
-    <Section classname="grid grid-cols-1 lg:flex w-full justify-start gap-20 items-center">
-      <div className="relative w-[400px] col-span-1">
-        <div className="-z-10 left-[15px] h-[610px] w-[350px] rounded-t-full border-2 border-[#a7327a] absolute bottom-0 "></div>
+    <Section classname="flex flex-col lg:flex-row w-full justify-center gap-20 items-center mx-auto mt-10">
+      <div className="relative md:w-[400px] w-[250px] col-span-1">
+        <div className="-z-10 left-[15px] h-[610px] md:w-[350px] w-[250px] rounded-t-full border-2 border-[#a7327a] absolute bottom-0"></div>
         <img
           src={innerImage}
           alt=""
-          className="h-[600px] w-[350px] rounded-t-full object-cover"
+          className="h-[600px] md:w-[350px] rounded-t-full object-cover"
         />
         <h3 className="font-poppins text-[40px] font-bold text-black opacity-10 absolute w-fit -left-[261px] bottom-[200px] transform -rotate-90">
           Honeymoon Packages
@@ -27,7 +27,7 @@ const ViewPackages = () => {
         <img
           src={image1}
           alt=""
-          className=" h-[90px] w-[90px] rounded-full absolute object-cover top-[200px] -left-[100px]"
+          className=" h-[90px] w-[90px] rounded-full absolute object-cover top-[200px] md:-left-[100px] sm:-left-[60px] -left-[40px]"
         />
         <img
           src={image0}
@@ -40,11 +40,14 @@ const ViewPackages = () => {
           className=" h-[50px] w-[50px] rounded-full absolute object-cover -top-[20px] left-[120px]"
         />
       </div>
-      <div className="col-span-1 flex flex-col gap-[20px] w-[500px] jutify-center h-full jsutify-center">
+      <div className="col-span-1 flex flex-col gap-[20px] md:w-[500px] w-[300px] jutify-center h-full jsutify-center">
         <span className="font-semibold font-poppins text-[18px] text-primary uppercase">
           Honeymoon Specials
         </span>
-        <h2 className="text-[#181E4B] font-volkhov font-bold text-[50px] capitalize leading-[50px]">
+        <h2 className="text-[#181E4B] font-volkhov font-bold md:text-[50px] text-[30px] capitalize md:leading-[50px] leading-[3
+        
+        
+        0px]">
           Our Romantic Tropical Destinations
         </h2>
         <p className="text-[16px] text-black font-poppins">

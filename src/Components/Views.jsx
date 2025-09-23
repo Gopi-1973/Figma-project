@@ -1,6 +1,6 @@
 import Button from "./Button";
 import img1 from "../assets/views/views1.svg";
-import img2 from "../assets/views/views2.jpg";
+import img2 from "../assets/views/views4.png";
 import img3 from "../assets/views/views3.png";
 import img4 from "../assets/views/views4.png";
 import innerImage from "../assets/views/eifeltower.svg";
@@ -18,18 +18,18 @@ const Views = () => {
           <span className="font-semibold font-poppins text-[18px] text-primary uppercase">
             Promotion
           </span>
-          <h2 className="text-[#181E4B] font-volkhov font-bold text-[50px] capitalize leading-[50px]">
+          <h2 className="text-[#181E4B] font-volkhov font-bold md:text-[50px] text-[30px] capitalize md:leading-[50px] leading-[30px]">
             We Provide You Best <br /> Europe Sightseeing Tours
           </h2>
-          <p className="text-[16px] text-black font-poppins w-[580px]">
+          <p className="text-[16px] text-black font-poppins md:w-[580px] xl:w-[590px]">
             Et labore harum non nobis ipsum eum molestias mollitia et corporis
             praesentium a laudantium internos. Non quis eius quo eligendi
-            corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut
-            ducimus illum aut optio quibusdam!
+            corrupti <br/> et fugiat nulla qui soluta recusandae in maxime quasi aut
+            ducimus <br />illum aut optio quibusdam!
           </p>
           <Button name={"View Packages"} classname="w-fit" />
         </div>
-        <div className="2xl:w-[1200px] xl:w-[800px] lg:w-[600px] w-[400px] grid 2xl:grid-cols-4 lg:grid-cols-2 grid-cols-2 lg:gap-10 gap-4">
+        <div className="2xl:w-[1200px] xl:w-[950px] lg:w-[850px] md:w-[700px] w-[350px] grid 2xl:grid-cols-4 md:grid-cols-4 grid-cols-1 lg:gap-10 gap-4">
           <div className="relative col-span-1 rounded-[10px] overflow-hidden">
             <img
               src={img1}

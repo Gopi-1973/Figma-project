@@ -7,16 +7,16 @@ import twoo from "../assets/footer/logo/twoo.svg";
 import Button from "./Button";
 const Footer = () => {
   return (
-    <div className="w-full overflow-hidden relative flex items-center justify-center flex-col">
+    <div className="w-f overflow-hidden relative flex text-left items-center justify-center flex-col">
       <img
         src={footerImage}
         alt=""
         className="absolute bottom-0 -right-[200px] h-full opacity-5 -z-10 w-[577px]"
       />
-      <div className="flex flex-wrap justify-between gap-3 w-full px-[200px] py-20">
+      <div className="flex flex-col sm:flex-col md:flex-row justify-between gap-3  py-20">
         <div className="flex flex-col">
           <img src={logo} alt="" className="w-[100px]" />
-          <p className="font-manrope font-medium text-[#757095] text-[16px] w-[220px]">
+          <p className="font-manrope font-medium text-[#757095] text-[18px] w-[220px]">
             Travel helps companies manage payments easily.
           </p>
           <div className="flex items-center gap-3 mt-4">
@@ -66,10 +66,10 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h6 className="font-manrope text-[21px] font-bold text-[#181433]">
+          <h6 className="font-manrope md:text-[21px] text-[16px] font-bold text-[#181433]">
             Join Our Newsletter
           </h6>
-          <div className="flex items-center h-[55px] w-[350px] bg-[#EEF] justify-between">
+          <div className="flex items-center h-[55px] w-[330px] bg-[#EEF] justify-between">
             <input
               type="text"
               name=""
@@ -77,7 +77,7 @@ const Footer = () => {
               placeholder="Enter your email"
               className="flex-1 h-full outline-0 focus:border-0 border-0 px-3 placeholder:text-[16px] placeholder:font-manrope placeholder:text-[#181433] placeholder:opacity-20 placeholder:font-medium"
             />
-            <Button name={"Subscribe"} classname="" />
+            <Button name={"Subscribe"} classname="absolute right-8" />
           </div>
           <p className="font-manrope text-[16px] font-medium text-[#181433] opacity-50 w-[300px]">
             * Will send you weekly updates for your better tour packages.

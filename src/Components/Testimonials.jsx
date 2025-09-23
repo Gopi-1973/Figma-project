@@ -8,11 +8,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 const Testimonials = () => {
   return (
-    <div className="relative w-full flex flex-col items-center justify-center h-[620px] overflow-hidden mx-auto">
+    <div className="relative w-full flex flex-col items-center justify-center h-[620px] overflow-hidden mx-auto ">
       <img
         src={bg}
         alt=""
-        className="absolute w-full -z-10 h-full object-cover"
+        className="absolute w-full -z-10 h-full object-cover "
       />
       <div className="flex flex-col items-center gap-2 mt-[60px]">
         <span className="text-center font-semibold font-poppins text-[18px] text-primary uppercase">
@@ -22,7 +22,7 @@ const Testimonials = () => {
           See What Our Clients Say <br /> About Us
         </h2>
       </div>
-      <div className="w-full">
+      <div className="">
         <Swiper
           slidesPerView={1}
           centeredSlides={true}
