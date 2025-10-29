@@ -9,6 +9,7 @@ import Location from "../Components/Location";
 import Gallery from "../Components/Gallery";
 import PackagesContainer from "../Components/PackagesContainer";
 import ReusableHero from "../Components/ReusableHero";
+import { Helmet } from "react-helmet";
 
 const tabs = [
   {
@@ -36,6 +37,21 @@ const Packages = () => {
   };
   return (
     <>
+     <Helmet>
+       <title>Tour Packages | Travel Agency</title>
+        <meta
+          name="description"
+          content="Browse our Europe sightseeing tour packages and book your dream vacation."
+        />
+        <meta property="og:title" content="Our Packages  | Travel Agency" />
+        <meta
+          property="og:description"
+          content="Browse our Europe sightseeing tour packages and book your dream vacation."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://figmaproject-delta.vercel.app" />
+        <meta property="og:image" content="https://figmaproject-delta.vercel.app/assets/about/preview.jpg" />
+    </Helmet>
       <ReusableHero subTitle="Explore" title="Landscapes" />
       <div className="w-full px-[200px]">
         <div className="-mt-5 bg-white shadow-lg pb-6">

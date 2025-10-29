@@ -8,6 +8,7 @@ import TourPlan from "../Components/TourPlan";
 
 import Gallery from "../Components/Gallery";
 import Location from "../Components/Location";
+import { Helmet } from "react-helmet";
 
 const tabs = [
   {
@@ -35,6 +36,21 @@ const TourInfo = () => {
   };
   return (
     <>
+     <Helmet>
+       <title>Tour Info | Travel Agency</title>
+        <meta
+          name="description"
+          content="Detailed information about our Europe sightseeing tours, including itinerary, locations, and galleries."
+        />
+        <meta property="og:title" content="About Us | Travel Agency" />
+        <meta
+          property="og:description"
+          content="Detailed information about our Europe sightseeing tours, including itinerary, locations, and galleries."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://figmaproject-delta.vercel.app" />
+        <meta property="og:image" content="https://figmaproject-delta.vercel.app/assets/about/preview.jpg" />
+    </Helmet>
       <ReusableHero subTitle="Explore" title="Landscapes" />
       <div className="w-full px-[200px]">
         <div className="-mt-5 bg-white shadow-lg pb-6">

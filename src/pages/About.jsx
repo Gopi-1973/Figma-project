@@ -10,11 +10,27 @@ import one from "../assets/about/1.svg";
 import two from "../assets/about/2.svg";
 import three from "../assets/about/3.svg";
 import Testimonials from "../Components/Testimonials";
+import { Helmet } from "react-helmet";
 
 
 const About = () => {
   return (
     <>
+    <Helmet>
+       <title>About Us | Travel Agency</title>
+        <meta
+          name="description"
+          content="Learn more about our Europe sightseeing tours and international packages."
+        />
+        <meta property="og:title" content="About Us | Travel Agency" />
+        <meta
+          property="og:description"
+          content="Learn more about our Europe sightseeing tours and international packages."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://figmaproject-delta.vercel.app" />
+        <meta property="og:image" content="https://figmaproject-delta.vercel.app/assets/about/preview.jpg" />
+    </Helmet>
       <ReusableHero subTitle="Read" title="About Us" />
       <Section classname="w-full flex items-center justify-between">
         <div className="flex flex-col gap-[20px] justify-center h-full">
